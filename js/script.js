@@ -72,7 +72,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$(document).on('click', '.main-screen__btn', function() {
+	$(document).on('click', '.main-screen__btn, .map-link', function() {
 	  var linkID = $(this).attr('href');
 	  $('html, body').animate({ 
 	    scrollTop: $(linkID).offset().top 
@@ -88,7 +88,7 @@ $(document).ready(function(){
 			{
 				breakpoint: 1100,
 				settings: {
-					arrows: false
+					
 				}
 			}
 		]
